@@ -24,7 +24,7 @@ public class PlayerShoot : MonoBehaviour
         //shoot GUN
         if (Input.GetKeyDown(shoot))
         {
-            Instantiate(bulletPrefab, transform.position, Quaternion.Euler(gun.transform.rotation.x, bulletPrefab.transform.rotation.y, 0));
+            Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, bulletPrefab.transform.rotation.y, gun.transform.rotation.z));
             Debug.Log(transform.rotation.x);
         }
     }

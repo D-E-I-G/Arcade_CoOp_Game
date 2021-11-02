@@ -13,12 +13,16 @@ public class PlayerControl : MonoBehaviour
     private float xRange = 9.0f;
     private float yRange = 4.5f;
 
-    private SpriteRenderer playerSprite;
+    private SpriteRenderer playerSprite1;
+    private SpriteRenderer playerSprite2;
+    private SpriteRenderer playerSprite3;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerSprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        playerSprite1 = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        playerSprite2 = transform.GetChild(1).GetComponent<SpriteRenderer>();
+        playerSprite3 = transform.GetChild(2).GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -52,11 +56,29 @@ public class PlayerControl : MonoBehaviour
         //flip the sprite
         if (transform.position.x < 0)
         {
-            playerSprite.flipX = true;
+            playerSprite1.flipX = true;
         }
         else
         {
-            playerSprite.flipX = false;
-        }      
+            playerSprite1.flipX = false;
+        }
+
+        if (transform.position.x < 0)
+        {
+            playerSprite2.flipX = true;
+        }
+        else
+        {
+            playerSprite2.flipX = false;
+        }
+
+        if (transform.position.x < 0)
+        {
+            playerSprite3.flipX = true;
+        }
+        else
+        {
+            playerSprite3.flipX = false;
+        }
     }
 }
