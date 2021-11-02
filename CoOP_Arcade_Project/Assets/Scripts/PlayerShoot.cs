@@ -9,12 +9,6 @@ public class PlayerShoot : MonoBehaviour
     public GameObject gun;
     public GameObject monster;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -24,7 +18,7 @@ public class PlayerShoot : MonoBehaviour
         //shoot GUN
         if (Input.GetKeyDown(shoot))
         {
-            Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, bulletPrefab.transform.rotation.y, gun.transform.rotation.z));
+            Instantiate(bulletPrefab, transform.position, transform.rotation);
             Debug.Log(transform.rotation.x);
         }
     }
