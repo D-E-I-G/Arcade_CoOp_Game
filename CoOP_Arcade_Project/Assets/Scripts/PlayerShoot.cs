@@ -19,7 +19,6 @@ public class PlayerShoot : MonoBehaviour
         if (Input.GetKeyDown(shoot))
         {
             Instantiate(bulletPrefab, transform.position, transform.rotation);
-            Debug.Log(transform.rotation.x);
         }
     }
 }

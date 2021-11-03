@@ -6,8 +6,7 @@ public class BulletPool : MonoBehaviour
 {
     public static BulletPool bulletPoolInstanse;
 
-    [SerializeField]
-    private GameObject pooledBullet;
+    public GameObject pooledBullet;
     private bool notEnopughBulletsinPool = true;
 
     private List<GameObject> bullets;

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class DoubleSpiralBullets : MonoBehaviour
 {
-    private float angle = 0f;
+    //OUTDATED
+
+    /*private float angle = 0f;
 
     private Vector2 bulletMoveDirection;
 
@@ -38,5 +40,5 @@ public class DoubleSpiralBullets : MonoBehaviour
         {
             angle = 0f;
         }
-    }
+    }*/
 }

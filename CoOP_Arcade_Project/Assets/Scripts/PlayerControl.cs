@@ -9,7 +9,7 @@ public class PlayerControl : MonoBehaviour
 
     public float horizontalInput;
     public float verticalInput;
-    public float speed = 10.0f;
+    private float speed = 4;
     private float xRange = 9.0f;
     private float yRange = 4.5f;
 

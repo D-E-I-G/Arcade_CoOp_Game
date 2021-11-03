@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class FireBullets : MonoBehaviour
 {
-    [SerializeField]
-    private int bulletsAmount = 10;
+    // OUTDATED
 
-    [SerializeField]
+    /*private int bulletsAmount = 10;
+
     private float startAngle = 90f, endAngle = 270f;
 
     private Vector2 bulletmMoveDirection;
@@ -39,5 +39,5 @@ public class FireBullets : MonoBehaviour
 
             angle += angeleStep;
         }
-    }
+    }*/
 }
