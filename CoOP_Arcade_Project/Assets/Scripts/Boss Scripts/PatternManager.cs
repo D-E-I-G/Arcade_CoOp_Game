@@ -48,6 +48,8 @@ public class PatternManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         InvokeRepeating("Spiral", 0f, 0.45f);
         InvokeRepeating("Spiral2", 0.45f, 0.45f);
+        InvokeRepeating("Burst", 0f, 10f);
+        InvokeRepeating("BigBurst", 0f, 13.5f);
     }
 
     private void Burst()
