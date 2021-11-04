@@ -38,7 +38,7 @@ public class PatternManager : MonoBehaviour
         Invoke("Burst", 19.45f);
         Invoke("Burst2", 23.35f);
         Invoke("Burst", 27f);
-        Invoke("Burst2", 31.35f);
+        Invoke("BigBurst", 31f);
 
         //
         InvokeRepeating("Spiral", 2f, 0.75f);
@@ -68,6 +68,29 @@ public class PatternManager : MonoBehaviour
             bul.transform.rotation = transform.rotation;
             bul.SetActive(true);
             bul.GetComponent<Bullet>().SetMoveDirection(bulDir);
+
+            angle += angeleStep;
+        }
+    }
+
+    private void BigBurst()
+    {
+        float angeleStep = (endAngle - startAngle) / 7;
+        float angle = startAngle;
+
+        for (int i = 0; i < 10 + 1; i++)
+        {
+            float bulDirX = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180f);
+            float bulDirY = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180f);
+
+            Vector3 bulMoveVector = new Vector3(bulDirX, bulDirY, 0f);
+            Vector2 bulDir = (bulMoveVector - transform.position).normalized;
+
+            GameObject bull = BulletPool.bulletPoolInstanse.GetBigBullet();
+            bull.transform.position = transform.position;
+            bull.transform.rotation = transform.rotation;
+            bull.SetActive(true);
+            bull.GetComponent<Bullet>().SetMoveDirection(bulDir);
 
             angle += angeleStep;
         }
