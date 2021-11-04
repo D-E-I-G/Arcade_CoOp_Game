@@ -71,7 +71,7 @@ public class CharacterCreation : MonoBehaviour
         }
 
         //player two selection
-        if (Input.GetKeyDown(KeyCode.Keypad7))
+        if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             PlayerTwoG1.SetActive(true);
             PlayerTwoR1.SetActive(false);
@@ -81,7 +81,7 @@ public class CharacterCreation : MonoBehaviour
             PlayerTwoRGun.SetActive(false);
             PlayerTwoBGun.SetActive(false);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad8))
+        if (Input.GetKeyDown(KeyCode.Alpha8))
         {
             PlayerTwoG1.SetActive(false);
             PlayerTwoR1.SetActive(true);
@@ -91,7 +91,7 @@ public class CharacterCreation : MonoBehaviour
             PlayerTwoRGun.SetActive(true);
             PlayerTwoBGun.SetActive(false);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad9))
+        if (Input.GetKeyDown(KeyCode.Alpha9))
         {
             PlayerTwoG1.SetActive(false);
             PlayerTwoR1.SetActive(false);

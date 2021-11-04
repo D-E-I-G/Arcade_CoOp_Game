@@ -9,6 +9,20 @@ public class PlayerShoot : MonoBehaviour
     public GameObject gun;
     public GameObject monster;
 
+    private bool hasShot;
+
+    private void Awake()
+    {
+        hasShot = false;
+    }
+
+    IEnumerator Pew ()
+    {
+        Instantiate(bulletPrefab, transform.position, transform.rotation);
+        yield return new WaitForSeconds(1.75f);
+        hasShot = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -16,9 +30,10 @@ public class PlayerShoot : MonoBehaviour
         gun.transform.LookAt(monster.transform);
 
         //shoot GUN
-        if (Input.GetKeyDown(shoot))
+        if (Input.GetKeyDown(shoot) && (!hasShot))
         {
-            Instantiate(bulletPrefab, transform.position, transform.rotation);
+            hasShot = true;
+            StartCoroutine(Pew());
         }
     }
 }
