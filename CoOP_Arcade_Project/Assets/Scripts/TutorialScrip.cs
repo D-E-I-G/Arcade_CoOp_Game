@@ -7,7 +7,7 @@ public class TutorialScrip : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.V) || Input.GetKeyDown(KeyCode.Alpha5))
+        if (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Alpha6))
         {
             SceneManager.LoadScene(0);
         }

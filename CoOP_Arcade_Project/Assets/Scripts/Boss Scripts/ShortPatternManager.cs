@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PatternManager : MonoBehaviour
+public class ShortPatternManager : MonoBehaviour
 {
     private float angle = 0f;
     private float startAngle = 90f, endAngle = 270f;
 
     public Text textBox;
-    public float timeStart = 0;
+    public float timeStart = 65;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class PatternManager : MonoBehaviour
 
     void Update()
     {
-        timeStart += Time.deltaTime;
+        timeStart -= Time.deltaTime;
         textBox.text = timeStart.ToString("F1");
     }
 
@@ -56,22 +56,25 @@ public class PatternManager : MonoBehaviour
         //
         InvokeRepeating("Spiral", 2f, 0.75f);
 
-        yield return new WaitForSeconds(7.8f);//7.8
+        yield return new WaitForSeconds(7.8f);
         CancelInvoke("Spiral");
-        yield return new WaitForSeconds(0.1f);//7.9
+        yield return new WaitForSeconds(0.1f);
         InvokeRepeating("Spiral", 0f, 0.45f);
         InvokeRepeating("Spiral2", 0.45f, 0.45f);
-        yield return new WaitForSeconds(38.7f);//46.6
+        yield return new WaitForSeconds(38.7f);
         CancelInvoke("Spiral");
         CancelInvoke("Spiral2");
-        yield return new WaitForSeconds(3.3f);//49.9
+        yield return new WaitForSeconds(3.3f);
         CancelInvoke("Burst2");
         InvokeRepeating("Spiral", 0f, 0.45f);
         InvokeRepeating("Spiral2", 0.45f, 0.45f);
-        yield return new WaitForSeconds(0.1f);//even 50
-
-        //end of match at 221 seconds
-        //SceneManager.LoadScene(4);
+        yield return new WaitForSeconds(12f);
+        CancelInvoke("Spiral");
+        CancelInvoke("Spiral2");
+        CancelInvoke("Burst");
+        CancelInvoke("BigBurst");
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene(4);
     }
 
     private void Burst()

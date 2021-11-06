@@ -5,24 +5,24 @@ using UnityEngine.UI;
 
 public class PlayerTwoCollision : MonoBehaviour
 {
-    public float radNum = 0;
+    public static float radNum2 = 0;
     public Text radiation;
 
     void Start()
     {
-        radiation.text = radNum.ToString("F0");
+        radiation.text = radNum2.ToString("F0");
     }
 
     void Update()
     {
-        radiation.text = radNum.ToString("F0");
+        radiation.text = radNum2.ToString("F0");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Blob"))
         {
-            radNum++;
+            radNum2++;
         }
     }
 }

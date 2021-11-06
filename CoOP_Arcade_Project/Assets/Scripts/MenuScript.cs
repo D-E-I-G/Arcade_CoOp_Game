@@ -9,12 +9,20 @@ public class MenuScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Alpha4))
         {
+            //long game
             SceneManager.LoadScene(1);
+        }
+
+        if (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            //Tutorial
+            SceneManager.LoadScene(2);
         }
 
         if (Input.GetKeyDown(KeyCode.V) || Input.GetKeyDown(KeyCode.Alpha5))
         {
-            SceneManager.LoadScene(2);
+            //short game
+            SceneManager.LoadScene(3);
         }
     }
 }
