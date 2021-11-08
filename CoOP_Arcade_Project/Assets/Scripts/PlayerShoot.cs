@@ -9,16 +9,20 @@ public class PlayerShoot : MonoBehaviour
     public GameObject gun;
     public GameObject monster;
 
+    private AudioSource shot;
+
     private bool hasShot;
 
     private void Awake()
     {
         hasShot = false;
+        shot = GetComponent<AudioSource>();
     }
 
     IEnumerator Pew ()
     {
         Instantiate(bulletPrefab, transform.position, transform.rotation);
+        shot.Play();
         yield return new WaitForSeconds(1.75f);
         hasShot = false;
     }

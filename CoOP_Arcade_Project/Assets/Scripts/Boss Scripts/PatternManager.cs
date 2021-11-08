@@ -10,7 +10,7 @@ public class PatternManager : MonoBehaviour
     private float startAngle = 90f, endAngle = 270f;
 
     public Text textBox;
-    public float timeStart = 0;
+    public float timeStart = 221;
 
     // Start is called before the first frame update
     void Start()
