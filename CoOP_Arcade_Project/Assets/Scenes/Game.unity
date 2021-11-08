@@ -252,7 +252,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 19034c1280135b14fb068c844c2f1f1a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -693,7 +693,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 19034c1280135b14fb068c844c2f1f1a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1368,6 +1368,7 @@ GameObject:
   - component: {fileID: 1018085950}
   - component: {fileID: 1018085951}
   - component: {fileID: 1018085952}
+  - component: {fileID: 1018085953}
   m_Layer: 0
   m_Name: PlayerOne
   m_TagString: Untagged
@@ -1544,6 +1545,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!54 &1018085953
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018085946}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1132940545
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,6 +2281,7 @@ GameObject:
   - component: {fileID: 1885381344}
   - component: {fileID: 1885381346}
   - component: {fileID: 1885381347}
+  - component: {fileID: 1885381348}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Monster
@@ -2369,6 +2387,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &1885381348
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885381343}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
 --- !u!1 &1901065541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4275432113019360942, guid: ed924d82472ce004b932932b8154e107, type: 3}
@@ -2554,6 +2588,7 @@ GameObject:
   - component: {fileID: 2127210219}
   - component: {fileID: 2127210221}
   - component: {fileID: 2127210220}
+  - component: {fileID: 2127210222}
   m_Layer: 0
   m_Name: PlayerTwo
   m_TagString: Untagged
@@ -2730,6 +2765,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1a83bd93d65e240baaa51e0cf04d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &2127210222
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127210215}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1001 &2721833067568752069
 PrefabInstance:
   m_ObjectHideFlags: 0

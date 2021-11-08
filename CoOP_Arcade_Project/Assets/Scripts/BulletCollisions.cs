@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class BulletCollisions : MonoBehaviour
 {
+    private AudioSource splat;
+
+    private void Start()
+    {
+        splat = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {

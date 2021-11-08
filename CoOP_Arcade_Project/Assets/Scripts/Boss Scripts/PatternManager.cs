@@ -46,12 +46,7 @@ public class PatternManager : MonoBehaviour
         Invoke("BigBurst", 34.4f);
         Invoke("Burst", 38.7f);
         Invoke("Burst2", 42.6f);
-        InvokeRepeating("Burst2", 46.6f, 0.4f);
-        Invoke("BigBurst", 50.2f);
-        Invoke("Burst", 53.5f);
-        Invoke("Burst2", 58.1f);
-        Invoke("BigBurst", 61f);
-        Invoke("Burst2", 61.3f);
+        InvokeRepeating("Burst2", 46.6f, 0.25f);
 
         //
         InvokeRepeating("Spiral", 2f, 0.75f);
@@ -69,6 +64,14 @@ public class PatternManager : MonoBehaviour
         InvokeRepeating("Spiral", 0f, 0.45f);
         InvokeRepeating("Spiral2", 0.45f, 0.45f);
         yield return new WaitForSeconds(0.1f);//even 50
+        Invoke("BigBurst", 0.2f);
+        Invoke("Burst", 2.2f);
+        Invoke("Burst2", 4.4f);
+        Invoke("BigBurst", 8f);
+        Invoke("Burst2", 10f);
+        InvokeRepeating("Burst2", 10.8f, 0.1f);
+        yield return new WaitForSeconds(11.6f);//61.6
+        CancelInvoke("Burst2");
 
         //end of match at 221 seconds
         //SceneManager.LoadScene(4);
