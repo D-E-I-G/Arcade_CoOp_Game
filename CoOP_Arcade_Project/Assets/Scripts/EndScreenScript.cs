@@ -29,31 +29,31 @@ public class EndScreenScript : MonoBehaviour
         }
 
         //Player 1 Results
-        if (PlayerOneCollision.radNum1 < 1)
+        if (PlayerOneCollision.radNum1 < 3)
         {
-            result1.text = ("You have escaped unscathed");
-        }
-        if (PlayerOneCollision.radNum1 > 0 && PlayerOneCollision.radNum1 < 3)
-        {
-            result1.text = ("You have a decade or two left");
+            result1.text = ("You have escaped relatively unscathed");
         }
         if (PlayerOneCollision.radNum1 > 2 && PlayerOneCollision.radNum1 < 6)
         {
-            result1.text = ("You've got a couple years");
+            result1.text = ("You have a decade or two left");
         }
         if (PlayerOneCollision.radNum1 > 5 && PlayerOneCollision.radNum1 < 9)
         {
+            result1.text = ("You've got a couple years");
+        }
+        if (PlayerOneCollision.radNum1 > 9 && PlayerOneCollision.radNum1 < 13)
+        {
             result1.text = ("There's a solid year waiting for you");
         }
-        if (PlayerOneCollision.radNum1 > 8 && PlayerOneCollision.radNum1 < 13)
+        if (PlayerOneCollision.radNum1 > 12 && PlayerOneCollision.radNum1 < 15)
         {
             result1.text = ("You might make it a couple months");
         }
-        if (PlayerOneCollision.radNum1 > 12 && PlayerOneCollision.radNum1 < 20)
+        if (PlayerOneCollision.radNum1 > 14 && PlayerOneCollision.radNum1 < 21)
         {
             result1.text = ("You've got a good few weeks");
         }
-        if (PlayerOneCollision.radNum1 > 19)
+        if (PlayerOneCollision.radNum1 > 20)
         {
             result1.text = ("You have a few days to live");
         }

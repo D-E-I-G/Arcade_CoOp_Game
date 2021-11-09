@@ -1023,7 +1023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textBox: {fileID: 553302490}
-  timeStart: 0
+  timeStart: 221.1
 --- !u!1 &891799081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3946777075302700083, guid: 45aa67d582d9f5442b8a4ed562da49a5, type: 3}
@@ -1557,7 +1557,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
@@ -2777,7 +2777,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
