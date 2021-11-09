@@ -2,7 +2,9 @@
 
 Title: Hazmat Land
 
-Controls: P1 Move = WASD
+Controls: 
+
+	  P1 Move = WASD
 	  
 	  P2 Move = Arrow Keys
 	  
