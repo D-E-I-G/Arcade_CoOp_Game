@@ -22,10 +22,10 @@ Lukas Woodger - Art, Design, Programming
 Alan Tadiello - Programming, Sound Effects, Music"
 
 
-Interesting fetures: Dynamic boss projectile-patterns, attacks synced with music. 
+Interesting features: Dynamic boss projectile-patterns, attacks synced with music. 
 
 Music: https://youtu.be/ENXsdMtiAho
 
-Sound Effects: Gun: https://youtu.be/3JdxuDIuGbw
+Gun Sound Effect: https://youtu.be/3JdxuDIuGbw
 	       
 	   
